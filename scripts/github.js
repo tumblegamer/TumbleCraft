@@ -5,7 +5,7 @@ function printRepoCount() {
 $(document).ready(function(){
   var request = new XMLHttpRequest();
   request.onload = printRepoCount;
-  request.open('get', 'https://api.github.com/users/funchal', true)
+  request.open('get', 'https://api.github.com/users/funchal', true);
   $("div.releases").html("<b>Hello world!</b>");
-  request.send()
+  request.send();
 });
