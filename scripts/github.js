@@ -1,8 +1,7 @@
-
-$(document).ready(function(){
+$(function(){
  function printRepoCount() {
   var responseObj = JSON.parse(this.responseText);
-  $(#releases).html(responseObj.name + " has " + responseObj.public_repos + " public repositories!");
+  $("#releases").html(responseObj.name + " has " + responseObj.public_repos + " public repositories!");
 }
 var request = new XMLHttpRequest();
 request.onload = printRepoCount;
