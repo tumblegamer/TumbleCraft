@@ -1,6 +1,6 @@
 .sidebar
 {
-    float: right;
+    float: left;
     width: 250px;
     background: #ccc;
     min-height: 100%;
