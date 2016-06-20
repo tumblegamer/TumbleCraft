@@ -7,4 +7,4 @@ $(document).ready(function(){
   request.onload = printRepoCount;
   request.open('get', 'https://api.github.com/users/funchal', true)
   request.send()
-}
+});
