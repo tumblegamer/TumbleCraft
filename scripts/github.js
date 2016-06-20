@@ -1,7 +1,7 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
-  $("#releases").html(obj[1].id);
+  $("#releases").html(obj);
 }
 function githubAIP(DOMString method,
    DOMString url,
