@@ -1,6 +1,13 @@
-﻿{
-  "pack": {
-    "pack_format": 2,
-    "description": "§aCreated by: §cTumbleGamer\n§aVersion: §e2.0 §r(Minecraft 1.10+)"
-  }
+{
+	"pack":{
+		"pack_format":2,
+		"description":"\u00A7aCreated by: \u00A7cTumbleGamer\n\u00A7aVersion: \u00A7e2.0 \u00A7r(Minecraft 1.10+)"
+	},
+    "language":{
+       "tl_TN":{
+          "name":"\u00A7eTumblelish\u00A7r",
+          "region":"\u00A7cTumbleNet\u00A7r",
+          "bidirectional":false
+       }
+    }
 }
