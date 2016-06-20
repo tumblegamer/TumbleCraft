@@ -4,3 +4,6 @@
     width: 250px;
     min-height: 100%;
 }
+.main-content {
+    float: right;
+}
