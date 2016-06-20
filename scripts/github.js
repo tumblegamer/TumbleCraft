@@ -1,7 +1,7 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
-  var face = jQuery.getJSON("https://api.github.com/repos/tumblegamer/TumbleCraft/releases?callback=?",callback)
+  var face = jQuery.getJSON("https://api.github.com/repos/tumblegamer/TumbleCraft/releases?callback=0",0)
   
   var text="";
   /*for (i = 0; i < obj.data.length; i++) { 
