@@ -1,10 +1,11 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
-
-while (obj.length > 0) {
-    $("#releases").html(obj + "<br/>");
-}
+  var text;
+  for (i = 0; i < obj.data.length; i++) { 
+   text += obj.data[i].id + "<br>";
+  }
+  $("#releases").html(text);
 }
 
   
@@ -20,7 +21,7 @@ request.onload = printOutput;
 request.open(method,"https://api.github.com" + url,async,user,password)
 request.send()
    }
-githubAPI(get,"/repos/tumblegamer/TumbleCraft/releases")
+githubAPI(get,"/repos/tumblegamer/TumbleCraft/releases?callback=0")
 });
 
 
