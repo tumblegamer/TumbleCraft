@@ -26,6 +26,7 @@ request.send()
 githubAPI(get,"/repos/tumblegamer/TumbleCraft/releases?callback=0")
 var face = jQuery.getJSON("https://api.github.com/repos/tumblegamer/TumbleCraft/releases?callback=0",0);
   $("#releases").html(face.data[1].id);
+  $("#releases").html("test");
 });
 
 
