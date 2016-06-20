@@ -1,7 +1,4 @@
-[![Downloads per month](https://img.shields.io/npm/dm/github-api.svg?maxAge=2592000)][npm-package]
-[![Latest version](https://img.shields.io/npm/v/github-api.svg?maxAge=3600)][npm-package]
-[![Gitter](https://img.shields.io/gitter/room/michael/github.js.svg?maxAge=2592000)][gitter]
-[![Travis](https://img.shields.io/travis/michael/github.svg?maxAge=60)][travis-ci]
+
 
 **TumbleCraft** - My First Minecraft Resouce Pack
 
