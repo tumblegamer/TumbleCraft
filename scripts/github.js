@@ -20,10 +20,10 @@ function githubAIP(DOMString method,
    {
     var request = new XMLHttpRequest();
 request.onload = printOutput;
-request.open(method,"https://api.github.com" + url,async,user,password)
-request.send()
+request.open(method,"https://api.github.com" + url,async,user,password);
+request.send();
    }
-githubAPI(get,"/repos/tumblegamer/TumbleCraft/releases?callback=0")
+githubAPI(get,"/repos/tumblegamer/TumbleCraft/releases?callback=0");
 var face = jQuery.getJSON("https://api.github.com/repos/tumblegamer/TumbleCraft/releases?callback=0",0);
   $("#releases").html(face.data[1].id);
   $("#releases").html("test");
