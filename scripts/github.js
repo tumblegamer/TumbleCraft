@@ -7,7 +7,7 @@ $(function(){
   /*for (i = 0; i < obj.data.length; i++) { 
    text += obj.data[i].id + "<br>";
   }*/
-  $("#releases").html(obj.data[1].id);
+  $("#releases").html(face.data[1].id);
 }
 
   
