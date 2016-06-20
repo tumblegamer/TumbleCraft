@@ -1,7 +1,7 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
-  var text;
+  var text="";
   for (i = 0; i < obj.data.length; i++) { 
    text += obj.data[i].id + "<br>";
   }
