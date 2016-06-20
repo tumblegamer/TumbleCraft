@@ -5,6 +5,6 @@ $(function(){
 }
 var request = new XMLHttpRequest();
 request.onload = printRepoCount;
-request.open('get', 'https://api.github.com/users/funchal', true)
+request.open('get', 'https://api.github.com/users/tumblegamer', true)
 request.send()
 });
