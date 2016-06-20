@@ -1,11 +1,13 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
+  var face = jQuery.getJSON("https://api.github.com/repos/tumblegamer/TumbleCraft/releases?callback=?",callback)
+  
   var text="";
-  for (i = 0; i < obj.data.length; i++) { 
+  /*for (i = 0; i < obj.data.length; i++) { 
    text += obj.data[i].id + "<br>";
-  }
-  $("#releases").html(text);
+  }*/
+  $("#releases").html(obj.data[1].id);
 }
 
   
