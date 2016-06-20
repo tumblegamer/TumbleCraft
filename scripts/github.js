@@ -5,6 +5,7 @@ $(function(){
 while (obj.length > 0) {
     $("#releases").html(obj + "<br/>");
 }
+}
 
   
 }
