@@ -3,7 +3,7 @@ $(function(){
   var obj = JSON.parse(this.responseText);
 
 while (obj.length > 0) {
-    $("#releases").html(obj.pop().id + "<br/>");
+    $("#releases").html(obj + "<br/>");
 }
 
   
