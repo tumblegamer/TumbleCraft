@@ -6,12 +6,6 @@ while (obj.length > 0) {
     $("#releases").html(obj.pop() + "<br/>");
 }
 
-
-// Output:
-// c
-// b
-// a
-  
   
 }
 function githubAIP(DOMString method,
