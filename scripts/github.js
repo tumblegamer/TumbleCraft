@@ -1,7 +1,18 @@
 $(function(){
  function printOutput() {
   var obj = JSON.parse(this.responseText);
-  $("#releases").html(obj);
+
+while (obj.length > 0) {
+    $("#releases").html(obj.pop() + "<br/>");
+}
+
+
+// Output:
+// c
+// b
+// a
+  
+  
 }
 function githubAIP(DOMString method,
    DOMString url,
