@@ -14,16 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="scripts/github.js"></script>
     
-    <script>
+    <script type="text/javascript">
     $(function(){
       var text="";
-       if (githubAPI("/repos/tumblegamer/TumbleCraft/releases").length == 0) {
-        text = text + '<p>No releases!</p>';
-      } else {
-        $.each(githubAPI("/repos/tumblegamer/TumbleCraft/releases"), function(index,element) {
+      $.each(githubAPI("/repos/tumblegamer/TumbleCraft/releases"), function(index,element) {
           text = text + "<li>" + element.name + "<br><a href=" + element.zipball_url + ">Download ZIP</a> | <a href=" + element.tarball_url + ">Download TAR</a> | <a href=" + element.html_url + ">Change Log</a></li><br>";
-        });
-        text = "<ul>" + text + "</ul>";
+      });
+      text = "<ul>" + text + "</ul>";
       }
        $("#releases").html(text);
     });
