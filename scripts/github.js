@@ -6,8 +6,8 @@ $(function(){
   
  }
  var username = "tumblegamer"
- var url   = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
- $("#releases").html("hi");
+ var url = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
+ $("#releases").html("<a href=" + url + ">" + username + "</a>");
 });
 
 
