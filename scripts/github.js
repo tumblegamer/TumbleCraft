@@ -8,8 +8,8 @@ $(function(){
    if(data.length == 0) {
     text = text + '<p>No releases!</p>'; 
    } else {
-    $.each(data, function(index) {
-     text += "<li>" + data[index].name + "</li>";
+    $.each(data, function(element) {
+     text += "<li>" + element.name + "</li>";
     }
     text = "<ul>" + text + "</ul>"
    }
