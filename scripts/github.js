@@ -4,7 +4,7 @@ $(function(){
  function githubAPI(url){
   ("#releases").html("Loading GitHub API");
   $.getJSON(url, function(data){
-  $("#releases").html(data[].id);
+  $("#releases").html(data[0].id);
   });
  }
  var username = "tumblegamer";
