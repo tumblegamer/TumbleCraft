@@ -1,6 +1,6 @@
 function githubAPI(url) {
   url="https://api.github.com" + url;
-  var output = [];
+  var output = [face];
    $("#releases").html("test");
   $.getJSON(url, function(data) {
     output = data;
