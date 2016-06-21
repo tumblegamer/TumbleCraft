@@ -3,8 +3,8 @@ $(function(){
  githubApiUrl = "https://api.github.com";
  function githubAPI(url){
   $("#releases").html("githubAPI");
-  $.getJSON(url, function(){
-  $("#releases").html("getJSON");
+  $.getJSON(url, function(data){
+  $("#releases").html(data);
   });
  }
  var username = "tumblegamer";
