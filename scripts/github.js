@@ -9,7 +9,7 @@ $(function(){
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
  
-  $(this).html( "body" )
+  $(this).html( "body" );
   });
  }
  var username = "tumblegamer";
