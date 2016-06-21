@@ -10,7 +10,7 @@ $(function(){
    } else {
     $.each(data, function(element) {
      text += "<li>" + element.name + "</li>";
-    }
+    });
     text = "<ul>" + text + "</ul>";
    }
     $(this)..html(text);
