@@ -11,7 +11,7 @@ $(function() {
         text = text + '<p>No releases!</p>';
       } else {
         $.each(data, function(index,element) {
-          text = text + "<li>" + element.id + data[index].name + "</li>";
+          text = text + "<li>" + element.name + "</li>";
         });
         text = "<ul>" + text + "</ul>";
       }
