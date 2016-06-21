@@ -4,10 +4,10 @@ $(function(){
  
  function githubAIP(url){
   $.getJSON(url,function(){
-   $(this).html(data[1].id)
+   $(this).html(data[1].id);
   });
  }
- var username = "tumblegamer"
+ var username = "tumblegamer";
  var jsonUrl = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
  $("#releases").githubAPU(jsonUrl);
 });
