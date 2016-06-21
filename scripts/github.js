@@ -2,12 +2,14 @@ $(function(){
  
  githubApiUrl = "https://api.github.com";
  
- function githubAIP(url,callback){
-  
+ function githubAIP(url){
+  $.getJSON(url,function(){
+   $(this).html(data[1].id)
+  });
  }
  var username = "tumblegamer"
- var url = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
- $("#releases").html("<a href=" + url + ">" + username + "</a>");
+ var jsonUrl = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
+ $("#releases").githubAPU(jsonUrl);
 });
 
 
