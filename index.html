@@ -12,20 +12,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/sidebar.css" media="screen">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="resources.tumblenet.tk/javascript/jquery/json/github.js"></script>
     <script src="scripts/github.js"></script>
-    
-    <script>
-    $(function(){
-      $("#releases").html("hi");
-      var text = "";
-      $.each(githubAPI("/repos/tumblegamer/TumbleCraft/releases"), function(index,element) {
-          text = text + "<li>" + element.name + "<br><a href=" + element.zipball_url + ">Download ZIP</a> | <a href=" + element.tarball_url + ">Download TAR</a> | <a href=" + element.html_url + ">Change Log</a></li><br>";
-      });
-      text = "<ul>" + text + "</ul>";
-      }
-      //$("#releases").html(text);
-    });
-    </script>
     
   </head>
 
