@@ -6,7 +6,7 @@ $(function(){
   /*for (i = 0; i < obj.data.length; i++) { 
    text += obj.data[i].id + "<br>";
   }*/
-  $("#releases").html(obj[1].id);
+  $("#releases").html(obj[1]['id']);
 }
 
   
