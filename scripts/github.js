@@ -4,7 +4,15 @@ $(function(){
  
  function githubAIP(url){
   $.getJSON(url,function(){
-   $(this).html(data[1].id);
+   var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( this, {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" )
   });
  }
  var username = "tumblegamer";
