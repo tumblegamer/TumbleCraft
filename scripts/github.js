@@ -6,7 +6,7 @@ $(function() {
     var text = "";
      $("#releases").html("Loading GitHub API...");
 
-      $("#releases").getJSON(url, function(data) {
+      $.getJSON(url, function(data) {
       if (data.length == 0) {
         text = text + '<p>No releases!</p>';
       } else {
@@ -15,7 +15,7 @@ $(function() {
         });
         text = "<ul>" + text + "</ul>";
       }
-      $(this).html(text);
+       $("#releases").html(text);
     });
   }
   var username = "tumblegamer";
