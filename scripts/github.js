@@ -8,5 +8,5 @@ function githubAPI(url) {
       output = data;
     }
     
-    return data
+    return output;
 });
