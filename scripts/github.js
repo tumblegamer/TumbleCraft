@@ -2,14 +2,14 @@ $(function(){
  
  githubApiUrl = "https://api.github.com";
  function githubAPI(url){
-  $("#releases").html("githubAPI");
+  ("#releases").html("Loading GitHub API");
   $.getJSON(url, function(data){
-  $("#releases").html(data[1].id);
+  $("#releases").html(data[].id);
   });
  }
  var username = "tumblegamer";
  var jsonUrl = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
- $("#releases").html("JScript");
+ $("#releases").html("Loading JSON");
  githubAPI(jsonUrl);
 });
 
