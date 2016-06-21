@@ -9,8 +9,8 @@ $(function() {
       if (data.length == 0) {
         text = text + '<p>No releases!</p>';
       } else {
-        $.each(data, function(index) {
-          text = text + "<li>" + data[index].name + "</li>";
+        $.each(data, function(index,element) {
+          text = text + "<li>" + element.id + data[index].name + "</li>";
         });
         text = "<ul>" + text + "</ul>";
       }
