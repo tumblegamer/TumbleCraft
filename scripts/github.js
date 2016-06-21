@@ -3,7 +3,7 @@ $(function() {
   githubApiUrl = "https://api.github.com";
 
   function githubAPI(url) {
-    $("#releases")..html("Loading GitHub API..,");
+    $("#releases").html("Loading GitHub API..,");
 
     $("#releases").getJSON(url, function(data) {
       if (data.length == 0) {
@@ -14,7 +14,7 @@ $(function() {
         });
         text = "<ul>" + text + "</ul>";
       }
-      $(this")..html(text);
+      $(this).html(text);
     });
   }
   var username = "tumblegamer";
