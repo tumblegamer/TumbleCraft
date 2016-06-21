@@ -11,7 +11,7 @@ $(function() {
         text = text + '<p>No releases!</p>';
       } else {
         $.each(data, function(index,element) {
-          text = text + "<li>" + element.name + "<br><a href=" + element.html_url + ">" + element.name + "</a> | <a href=" + element.html_url + ">" + element.name + "</a> | <a href=" + element.html_url + ">" + element.name + "</a></li>";
+          text = text + "<li>" + element.name + "<br><a href=" + element.zipball_url + ">Download ZIP</a> | <a href=" + element.tarball_url + ">Download TAR</a> | <a href=" + element.html_url + ">Change Log</a></li>";
         });
         text = "<ul>" + text + "</ul>";
       }
