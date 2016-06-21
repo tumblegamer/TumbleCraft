@@ -9,10 +9,7 @@ $(function(){
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
  
-  $( this, {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "body" )
+  $(this).html( "body" )
   });
  }
  var username = "tumblegamer";
