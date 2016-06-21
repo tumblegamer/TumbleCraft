@@ -1,6 +1,6 @@
 $(function(){
  
- githubApiUrl = "https://api.github.com/";
+ githubApiUrl = "https://api.github.com";
  
  function githubAIP(url,callback){
   
