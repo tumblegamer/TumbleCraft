@@ -3,7 +3,7 @@ $(function(){
  githubApiUrl = "https://api.github.com";
  
  function githubAPI(url){
-  $.getJSON(url,function(){
+  $.getJSON(url, function(){
   $(this).html( "body" );
   });
  }
