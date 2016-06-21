@@ -10,7 +10,7 @@ $(function() {
         text = text + '<p>No releases!</p>';
       } else {
         $.each(data, function(index) {
-          text += "<li>" + data[index].name + "</li>";
+          text = text + "<li>" + data[index].name + "</li>";
         });
         text = "<ul>" + text + "</ul>";
       }
