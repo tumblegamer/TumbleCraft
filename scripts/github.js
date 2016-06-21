@@ -2,7 +2,7 @@ $(function(){
  
  githubApiUrl = "https://api.github.com";
  
- function githubAIP(url){
+ function githubAPI(url){
   $.getJSON(url,function(){
    var items = [];
   $.each( data, function( key, val ) {
@@ -14,7 +14,7 @@ $(function(){
  }
  var username = "tumblegamer";
  var jsonUrl = githubApiUrl + "/repos/tumblegamer/TumbleCraft/releases";
- $("#releases").githubAPU(jsonUrl);
+ $("#releases").githubAPI(jsonUrl);
 });
 
 
