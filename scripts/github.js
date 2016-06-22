@@ -1,6 +1,5 @@
 $(function(){
       var text = "";
-      alert("face");
       var releasesArray = githubAPI("/repos/tumblegamer/TumbleCraft/releases");
       
       $.each(releasesArray, function(index,element) {
