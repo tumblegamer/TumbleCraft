@@ -1,5 +1,6 @@
 $(function(){
       var text = "";
+      alert("face");
       var releases = githubAPI("/repos/tumblegamer/TumbleCraft/releases");
       alert(releases.toString());
       $.each(githubAPI("/repos/tumblegamer/TumbleCraft/releases"), function(index,element) {
