@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
       var text = "";
       var releasesArray = githubAPI("repos/tumblegamer/TumbleCraft/releases");
       
