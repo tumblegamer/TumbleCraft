@@ -7,7 +7,8 @@ $(function(){
       });
       text = "<ul>" + text + "</ul>";
       //alert(text);
-      alert(releasesArray.toString());
+      var releasesText = releasesArray.toString()
+      alert(releasesText);
       
       $("#releases").html(text);
     });
